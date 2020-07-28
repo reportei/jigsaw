@@ -131,7 +131,7 @@ class SiteBuilder
     {
         $filename = $file->getFilenameWithoutExtension();
         $extension = $file->getFullExtension();
-        $path = rightTrimPath($this->outputPathResolver->link($file->getRelativePath(), $filename, $file->getExtraBladeExtension() ?: 'html'));
+        $path = rightTrimPath($this->outputPathResolver->link($file->getRelativePath(), $filename, $file->getExtraBladeExtension() ?: 'blade.php'));
         $relativePath = $file->getRelativePath();
         $url = rightTrimPath($baseUrl) . '/' . trimPath($path);
         $modifiedTime = $file->getLastModifiedTime();

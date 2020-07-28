@@ -57,7 +57,7 @@ class MarkdownHandler
                     $file,
                     $file->getRelativePath(),
                     $file->getFileNameWithoutExtension(),
-                    $extension == 'php' ? 'html' : $extension,
+                    $extension == 'php' ? 'blade.php' : $extension,
                     $this->render($file, $pageData, $extends),
                     $pageData
                 );

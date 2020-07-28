@@ -45,7 +45,7 @@ class CollectionPaginator
         $link = $this->outputPathResolver->link(
             $file->getRelativePath(),
             $file->getFilenameWithoutExtension(),
-            'html',
+            'blade.php',
             $pageNumber
         );
 

@@ -56,7 +56,7 @@ class PaginatedPageHandler
                 $file,
                 $file->getRelativePath(),
                 $file->getFilenameWithoutExtension(),
-                ($extension == 'php' || $extension == 'md') ? 'html' : $extension,
+                ($extension == 'php' || $extension == 'md') ? 'blade.php' : $extension,
                 $this->render($file, $pageData),
                 $pageData,
                 $page->currentPage

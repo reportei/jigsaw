@@ -132,7 +132,7 @@ class CollectionPathResolver
 
     private function resolve($path)
     {
-        return $this->outputPathResolver->link(dirname($path), basename($path), 'html');
+        return $this->outputPathResolver->link(dirname($path), basename($path), 'blade.php');
     }
 
     /**

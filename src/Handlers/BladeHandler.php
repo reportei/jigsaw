@@ -51,7 +51,7 @@ class BladeHandler
                 $file,
                 $file->getRelativePath(),
                 $file->getFilenameWithoutExtension(),
-                $extension == 'php' ? 'html' : $extension,
+                $extension == 'php' ? 'blade.php' : $extension,
                 $this->hasFrontMatter ?
                     $this->renderWithFrontMatter($file, $pageData) :
                     $this->render($file->getPathName(), $pageData),
